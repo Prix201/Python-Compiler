@@ -322,14 +322,7 @@ STRINGS :       STRINGS STRING      {$$ = $1;add_new_child($$,$2);$$->type = 1;}
 
 %%
 
-int main(void){
-    yyparse();
 
-
-    print_it(tree);
-
-    return 0;
-}
 
 void yyerror(const char *s) {
   fprintf(stderr,"INVALID INPUT in line:%d and pattern : %s \n",yylineno,yytext); 
