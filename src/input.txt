@@ -1,0 +1,5 @@
+def sun_n_natural(n : int) -> int:
+    if n == 0:
+        a = b + c
+        return 0
+    return n + sun_n_natural(n-1)
