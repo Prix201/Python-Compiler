@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include "symboltable.h"
 #include "parser.tab.h"
 #include "lex.yy.c"
 extern node*tree;
